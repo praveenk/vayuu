@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"~CCC
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ 
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAAu9LmjpykYJpN-H8dF0MUPBT2yXp_ZAY8_ufC3CFXhHIE1NvwkxRcOvHkx9DRw66otdekobHl6_r8xQ" type="text/javascript"></script>
+    
+    
+    <%=javascript_include_tag 'prototype','application'%>
+    <script type="text/javascript">
+
+	var markers=<%=@airportdots.to_json%>;
+
+    </script>  
+    <%=stylesheet_link_tag 'style'%>
+
+</head>
+<body>
+     <div id="map"></div>
+     <div id="toolbar">
+     	<h2>COOL2FLY2</h2>
+     	<b><i>Sign In &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp My Trips </i></b>
+     </div>
+     		
+</body>
+</html>
