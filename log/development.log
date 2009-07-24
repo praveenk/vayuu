@@ -6960,3 +6960,18 @@ Current clustering has 38 elements
 Current clustering has 32 elements
 Current clustering has 28 elements
 Completed in 0.23500 (4 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.15700 (66%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.278079,-121.109161&sw=%2037.357059,-122.893066]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-07-24 01:10:52) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.22092,-121.059723", "sw"=>" 37.327581,-122.843628", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.141000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -122.843628 AND longitude < -121.059723 AND latitude <= 38.22092 AND latitude >= 37.327581 AND airport_type = 'AIRPORT') [0m
+Starting clustering with 39 airports
+  [4;35;1mAirport Columns (0.016000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Current clustering has 37 elements
+Current clustering has 36 elements
+Current clustering has 31 elements
+Current clustering has 31 elements
+Current clustering has 20 elements
+Completed in 0.23500 (4 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.15700 (66%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.22092,-121.059723&sw=%2037.327581,-122.843628]
