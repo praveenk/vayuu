@@ -16,6 +16,14 @@ html, body {
 
 }
 
+#detailmap {
+	
+	width: 300px;
+	height: 300px;
+
+}
+
+
 
 #toolbar {
 	position: absolute;

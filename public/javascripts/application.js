@@ -1,5 +1,5 @@
 var map;
-var startZoom = 9;
+var startZoom = 10;
 
 var centerLatitude = 37.818361;
 var centerLongitude = -122;
@@ -62,6 +62,7 @@ function init() {
         map.addControl(new GSmallMapControl());
         map.addControl(new GMapTypeControl());
         map.setCenter(new GLatLng(centerLatitude, centerLongitude), startZoom);
+        map.getInfoWindow().show();
 
         updateMarkers();
         
@@ -83,7 +84,7 @@ function init() {
  	var url= '/viewallairports/clustered_airports?ne=' + northEast.toUrlValue() + '&sw= ' + southWest.toUrlValue();
  	
  	//log for debugging
- 	GLog.writeUrl(url);
+ 	//GLog.writeUrl(url);
  	
  	//AJAX to retrieve airports dynamically
  	var request = GXmlHttp.create();
@@ -104,6 +105,56 @@ function init() {
  	request.send(null);
  }
  
+ // Create a table for the reviews section
+ // Return the Body dom element
+ //
+ function createReviewsTable() {
+         // get the reference for the body
+        // var body = document.getElementsByTagName("body")[0];
+ 	 var body = document.createElement("body");
+         // creates a <table> element and a <tbody> element
+         var tbl     = document.createElement("table");
+         var tblBody = document.createElement("tbody");
+         
+         //Header Row
+         var row1 = document.createElement("tr");
+         var hCell1 = document.createElement("td");
+         var hCell1Text = document.createTextNode("User");
+         hCell1.appendChild(hCell1Text);
+         row1.appendChild(hCell1);
+         var hCell2 = document.createElement("td");
+	 var hCell2Text = document.createTextNode("Review");
+	 hCell2.appendChild(hCell2Text);
+         row1.appendChild(hCell2);
+         
+         tblBody.appendChild(row1);
+         
+         //Data Row
+	  var row2 = document.createElement("tr");
+	  var hCell21 = document.createElement("td");
+	  var hCell21Text = document.createTextNode("praveen");
+	  hCell21.appendChild(hCell21Text);
+	  row2.appendChild(hCell21);
+	  var hCell22 = document.createElement("td");
+	 var hCell22Text = document.createTextNode("Good Coffee, Long runway, Easy landing");
+	 hCell22.appendChild(hCell22Text);
+         row2.appendChild(hCell22);
+         
+         tblBody.appendChild(row2);
+ 
+ 
+         // put the <tbody> in the <table>
+         tbl.appendChild(tblBody);
+         // appends <table> into <body>
+         body.appendChild(tbl);
+         // sets the border attribute of tbl to 2;
+         tbl.setAttribute("border", "2");
+         
+         return body;
+     }
+
+ 
+ 
  function createMarker(point, type) {
 	 var markerPoint = new GLatLng(point.latitude, point.longitude);
 	 if(point.type == 'c'){
@@ -112,20 +163,41 @@ function init() {
  		var marker = new GMarker(markerPoint);
  	}
  	
- 	var airport_info = "Airport Id = " + point.airport_id + "<br>";
-    airport_info += "Airport Name = " + point.airport_name + "<br>";
-    airport_info += "Location = " + point.city;
-    airport_info += ", " + point.state;
-    
-    var infoTabs = [
-      new GInfoWindowTab("Info", airport_info),
-      new GInfoWindowTab("Reviews", "Pilot Reviews go here")]
-      
- 	GEvent.addListener(marker, 'click',
+ 	      
+      GEvent.addListener(marker, 'click',
  	        function() {
- 	           marker.openInfoWindowTabsHtml(infoTabs);
+ 	        	var airport_info = "Airport Id = " + point.airport_id + "<br>";
+		    	airport_info += "Airport Name = " + point.airport_name + "<br>";
+		   	airport_info += "Location = " + point.city;
+		    	airport_info += ", " + point.state;
+		    
+		   	// var airport_reviews = "Pilot reviews here";
+		    
+		    	var airport_reviews = createReviewsTable();
+		   
+		    	var tab1 = new GInfoWindowTab("Minimap", '<div id="detailmap"></div>');
+		    	var tab2 = new GInfoWindowTab("Info", airport_info);
+		    	var tab3 = new GInfoWindowTab("Reviews", airport_reviews);
+		    	
+		    	var infoTabs = [tab1, tab2, tab3];
+		    	marker.openInfoWindowTabsHtml(infoTabs);
+		      
+		      	var dMapDiv = document.getElementById("detailmap");
+		      	var detailMap = new GMap2(dMapDiv);
+		      	detailMap.setMapType(G_SATELLITE_MAP);
+		      	detailMap.setCenter(markerPoint, 14);
+		      	detailMap.addControl(new GSmallMapControl());
+		      	GEvent.addListener(detailMap, "zoomend", miniMapZoomEnd);
+      			GEvent.addListener(detailMap, "moveend", miniMapMoveEnd);
+ 	           
  	        }
  	    );
+ 	  
+ 	    
+ 	  // GEvent.addListener(marker, 'click', marker.showMapBlowup());
+	     	      
+ 	    
+ 	    
  	return marker;
  }
 
