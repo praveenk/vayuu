@@ -32,6 +32,16 @@ html, body {
 	width: 200px;
 	padding: 5px;
 	border: 1px white;
+	background-image:url('/images/transp_blue.gif');	
+}
+
+
+#headerbar {
+	position: absolute;
+	top: 5px;
+	left: 60px;
+	width: 600px;
+	padding: 5px;
+	border: 1px white;
 	background-image:url('/images/transp_blue.gif');
-	
 }

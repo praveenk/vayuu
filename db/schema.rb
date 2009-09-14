@@ -9,7 +9,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090620224715) do
+ActiveRecord::Schema.define(:version => 20090913081353) do
+
+  create_table "airportreviews", :force => true do |t|
+    t.string "airport_id"
+    t.string "pilotname"
+    t.string "reviewcontent"
+  end
+
+  add_index "airportreviews", ["airport_id"], :name => "index_airportreviews_on_airport_id"
 
   create_table "airports", :force => true do |t|
     t.string  "airport_id"
@@ -24,13 +32,13 @@ ActiveRecord::Schema.define(:version => 20090620224715) do
     t.float   "long_sec"
     t.float   "longitude"
     t.integer "airport_elev"
-    t.string  "facility_name", :limit => 45
-    t.string  "state",         :limit => 45
-    t.string  "city",          :limit => 45
-    t.string  "ownership",     :limit => 45
-    t.string  "fuel_types",    :limit => 45
-    t.string  "airport_name",  :limit => 100, :default => ""
-    t.string  "chart_name",    :limit => 100, :default => ""
+    t.string  "facility_name",     :limit => 45
+    t.string  "state",             :limit => 45
+    t.string  "city",              :limit => 45
+    t.string  "airport_ownership", :limit => 45
+    t.string  "fuel_types",        :limit => 45
+    t.string  "airport_name",      :limit => 100, :default => ""
+    t.string  "chart_name",        :limit => 100, :default => ""
   end
 
   add_index "airports", ["airport_id"], :name => "index_airports_on_airport_id"

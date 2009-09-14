@@ -19,18 +19,19 @@
 
 </head>
 <body>
-  	 <div id="map"></div>
-	<div id="headerbar">
-		<table style="width: 100%" border=0>
-			<tr>	
-				<td width=200> <h2><i> VAYUU &nbsp<b>beta</i></b></h2> </td>
-				<td width=60> <b> Sign in </b> </td>
-				<td width=10> <b> | </b></td>
-			</tr>				
-		
-	</div>
- 
- 
-     		
+<form action="" onsubmit="createSingleReview(); return false;">
+  <p><b>Pilot Name: </b> <br>
+    <input type="text" id="pilotname" name="pilotname" size="50">
+  </p>
+  <p><b>Airport:</b><br>
+    <input type="text" id="airportcode" name="airportcode" size="8" maxlength="4">
+  </p>
+  <p><b>Review:<br>
+    </b> 
+    <textarea name="Review" id="reviewcontent" cols="100" rows="10"></textarea>
+  </p>
+  <input type="submit" name="submit" value="Submit">
+</form>
+<p>&nbsp;</p>
 </body>
 </html>

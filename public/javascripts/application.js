@@ -203,6 +203,50 @@ function init() {
 
 }
 
+function createSingleReview() {
+ 	//retrieve content from Form
+ 	var airportcode = document.getElementById("airportcode").value;
+ 	var reviewcontent = document.getElementById("reviewcontent").value;
+ 	var pilotname = document.getElementById("pilotname").value;
+ 	
+ 	var getVars = "?revs[pilotname]=" + pilotname + "&revs[airport_id]=" + airportcode + "&revs[reviewcontent]=" + reviewcontent;
+ 	
+ 	//log for debugging
+ 	GLog.writeUrl(url);
+ 	
+ 	//AJAX to retrieve airports dynamically
+ 	var request = GXmlHttp.create();
+ 	
+ 	//Call the appropriate action in the controller
+ 	request.open('GET', 'createreview' + getVars, true);
+ 	
+ 		
+ 	request.onreadystatechange = function() {
+ 		if (request.readyState == 4){ //Request is complete
+ 			
+ 			var success = false;
+ 			var content = 'Error contactiong web service';
+ 			try{
+ 				var data = request.responseText;
+ 				var res = eval('('+data+')');
+ 				content = res.content;
+ 				success = res.success;
+ 			}
+ 			catch(e){
+ 				success = false;
+ 			}
+ 			
+ 			//create each point from list
+ 			if(!success){
+ 				alert(content);
+ 			}else{
+ 				alert('Success');
+ 			}
+ 		}
+ 	}
+ 	request.send(null);
+ 	return false;
+ }
 
 window.onload = init;
 window.onunload = GUnload;
