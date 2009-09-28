@@ -1,0 +1,18 @@
+<p>
+  <b>Username:</b>
+  <%=h @userreview.username %>
+</p>
+
+<p>
+  <b>Airport code:</b>
+  <%=h @userreview.airport_code %>
+</p>
+
+<p>
+  <b>Review content:</b>
+  <%=h @userreview.review_content %>
+</p>
+
+
+<%= link_to 'Edit', edit_userreview_path(@userreview) %> |
+<%= link_to 'Back', userreviews_path %>

@@ -1,0 +1,24 @@
+<h1>Airport Reviews</h1>
+
+<table>
+  <tr>
+    <th>Username</th>
+    <th>Airport code</th>
+    <th>Review content</th>
+  </tr>
+
+<% for userreview in @userreviews %>
+  <tr>
+    <td><%=h userreview.username %></td>
+    <td><%=h userreview.airport_code %></td>
+    <td><%=h userreview.review_content %></td>
+    <td><%= link_to 'Show', userreview %></td>
+    <td><%= link_to 'Edit', edit_userreview_path(userreview) %></td>
+    <td><%= link_to 'Destroy', userreview, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New userreview', new_userreview_path %>

@@ -9,15 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090913081353) do
-
-  create_table "airportreviews", :force => true do |t|
-    t.string "airport_id"
-    t.string "pilotname"
-    t.string "reviewcontent"
-  end
-
-  add_index "airportreviews", ["airport_id"], :name => "index_airportreviews_on_airport_id"
+ActiveRecord::Schema.define(:version => 20090928033848) do
 
   create_table "airports", :force => true do |t|
     t.string  "airport_id"
@@ -42,5 +34,29 @@ ActiveRecord::Schema.define(:version => 20090913081353) do
   end
 
   add_index "airports", ["airport_id"], :name => "index_airports_on_airport_id"
+
+  create_table "miscreviews", :force => true do |t|
+    t.string   "airport_id"
+    t.string   "pilotname"
+    t.string   "reviewcontent"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "products", :force => true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.string   "image_url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "userreviews", :force => true do |t|
+    t.string   "username"
+    t.string   "airport_code"
+    t.text     "review_content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

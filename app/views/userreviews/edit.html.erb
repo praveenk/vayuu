@@ -1,0 +1,24 @@
+<h1>Editing userreview</h1>
+
+<% form_for(@userreview) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :username %><br />
+    <%= f.text_field :username %>
+  </p>
+  <p>
+    <%= f.label :airport_code %><br />
+    <%= f.text_field :airport_code %>
+  </p>
+  <p>
+    <%= f.label :review_content %><br />
+    <%= f.text_area :review_content %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @userreview %> |
+<%= link_to 'Back', userreviews_path %>

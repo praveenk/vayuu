@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  airport_id: MyString
+  pilotname: MyString
+  reviewcontent: MyString
+
+two:
+  airport_id: MyString
+  pilotname: MyString
+  reviewcontent: MyString

@@ -4,6 +4,8 @@ var startZoom = 10;
 var centerLatitude = 37.818361;
 var centerLongitude = -122;
 
+var airport_reviews;
+
 
 //Create new icon for cluster of airports
 var iconCluster = new GIcon();
@@ -108,52 +110,108 @@ function init() {
  // Create a table for the reviews section
  // Return the Body dom element
  //
- function createReviewsTable() {
-         // get the reference for the body
-        // var body = document.getElementsByTagName("body")[0];
- 	 var body = document.createElement("body");
-         // creates a <table> element and a <tbody> element
-         var tbl     = document.createElement("table");
-         var tblBody = document.createElement("tbody");
-         
-         //Header Row
-         var row1 = document.createElement("tr");
-         var hCell1 = document.createElement("td");
-         var hCell1Text = document.createTextNode("User");
-         hCell1.appendChild(hCell1Text);
-         row1.appendChild(hCell1);
-         var hCell2 = document.createElement("td");
-	 var hCell2Text = document.createTextNode("Review");
-	 hCell2.appendChild(hCell2Text);
-         row1.appendChild(hCell2);
-         
-         tblBody.appendChild(row1);
-         
-         //Data Row
-	  var row2 = document.createElement("tr");
-	  var hCell21 = document.createElement("td");
-	  var hCell21Text = document.createTextNode("praveen");
-	  hCell21.appendChild(hCell21Text);
-	  row2.appendChild(hCell21);
-	  var hCell22 = document.createElement("td");
-	 var hCell22Text = document.createTextNode("Good Coffee, Long runway, Easy landing");
-	 hCell22.appendChild(hCell22Text);
-         row2.appendChild(hCell22);
-         
-         tblBody.appendChild(row2);
+ function createReviewsTable(airport_code) {
  
  
-         // put the <tbody> in the <table>
-         tbl.appendChild(tblBody);
-         // appends <table> into <body>
-         body.appendChild(tbl);
-         // sets the border attribute of tbl to 2;
-         tbl.setAttribute("border", "2");
+ 	//Call the controller to fetch the reviews for this airport
+ 	var url= '/viewallairports/get_airport_review?airportcode='+airport_code;
+ 	var reviews_html;
+	 	
+	 //log for debugging
+	 //GLog.writeUrl(url);
+	 	
+	 //AJAX to retrieve airports dynamically
+	 var request = GXmlHttp.create();
+	 request.open('GET', url, true);
+	 request.onreadystatechange = function() {
+	 	if (request.readyState == 4){
+	 		var data = request.responseText;
+	 		reviews = eval('('+data+')');
+	 			
+	 		//alert('Review retrived ='+reviews.length);
+	 		
+	 		//Create the HTML page that shows in the window
+			         // get the reference for the body
+			        // var body = document.getElementsByTagName("body")[0];
+			 	 var body = document.createElement("body");
+			         // creates a <table> element and a <tbody> element
+			         var tbl     = document.createElement("table");
+			         var tblBody = document.createElement("tbody");
+			         
+			         //Create Header Row
+			         var row1 = document.createElement("tr");
+				 var hCell1 = document.createElement("td");
+				 var hCell1Text = document.createTextNode("User");
+				 hCell1.appendChild(hCell1Text);
+				 row1.appendChild(hCell1);
+				 var hCell2 = document.createElement("td");
+				 var hCell2Text = document.createTextNode("Review");
+				 hCell2.appendChild(hCell2Text);
+				 row1.appendChild(hCell2);
+				          
+			         tblBody.appendChild(row1);
+			         
+			         var row2;
+			         var hCell21;
+			         var hCell21Text;
+			         var hCell22;
+			         var hCell22Text;
+			         
+			       //  alert('Another Alert: Review ='+reviews.length);
+			         
+			        
+			         for(var i=0; i<reviews.length; i++){
+			         
+			         	row2 = document.createElement("tr");
+			         	//Name column
+					hCell21 = document.createElement("td");
+					hCell21Text = document.createTextNode(reviews[i].username);
+					hCell21.appendChild(hCell21Text);
+					row2.appendChild(hCell21);
+					
+					
+					//Review column
+					var hCell22 = document.createElement("td");
+					var hCell22Text = document.createTextNode(reviews[i].review_content);
+					hCell22.appendChild(hCell22Text);
+					row2.appendChild(hCell22);    
+			         	tblBody.appendChild(row2); 
+			         
+			         }   
+			         
+			        
+			 
+			         // put the <tbody> in the <table>
+			         tbl.appendChild(tblBody);
+			         // sets the border attribute of tbl to 2;
+			         tbl.setAttribute("border", "2");
+			         
+			         // appends <table> into <body>
+			         body.appendChild(tbl);
+			         
+			         /**
+			         var url_path = "http://localhost:3000/userreviews/new";
+				 
+				 
+				 var elem = document.createelement("input");
+				 elem.setAttribute("id", "NewReview");
+				 elem.setAttribute("value", "Add New Review");
+				 elem.setAttribute("alt", "New Review");
+				 elem.setAttribute("type", "button");
+				 elem.onClick = window.open(url_path);
+				 
+			         body.appendChild(elem);
+			         **/
+         			 airport_reviews = body;
+	 		
+	 		
+	 		}
+	 }
+ 	request.send(null);
+              
          
-         return body;
      }
 
- 
  
  function createMarker(point, type) {
 	 var markerPoint = new GLatLng(point.latitude, point.longitude);
@@ -166,18 +224,26 @@ function init() {
  	      
       GEvent.addListener(marker, 'click',
  	        function() {
+ 	        	
+ 	 	
  	        	var airport_info = "Airport Id = " + point.airport_id + "<br>";
 		    	airport_info += "Airport Name = " + point.airport_name + "<br>";
 		   	airport_info += "Location = " + point.city;
 		    	airport_info += ", " + point.state;
 		    
-		   	// var airport_reviews = "Pilot reviews here";
-		    
-		    	var airport_reviews = createReviewsTable();
-		   
+		   	createReviewsTable(point.airport_id);
+		   	
 		    	var tab1 = new GInfoWindowTab("Minimap", '<div id="detailmap"></div>');
 		    	var tab2 = new GInfoWindowTab("Info", airport_info);
+		    	
+		    	//Add event listener to the reviews tab to pull up the reviews
+		    	//Unable to attach to the third tab. The event is fired when the marker is clicked so I'm adding the event to the 
+		    	//second tab so that the airport_reviews var can be updated before the third tab is created
+			//tab1.onclick = createReviewsTable(point.airport_id);
+		    	
 		    	var tab3 = new GInfoWindowTab("Reviews", airport_reviews);
+		    	
+		    	
 		    	
 		    	var infoTabs = [tab1, tab2, tab3];
 		    	marker.openInfoWindowTabsHtml(infoTabs);
@@ -222,10 +288,13 @@ function createSingleReview() {
  	
  		
  	request.onreadystatechange = function() {
+ 		if (request.readyState == 1 ){ //Request is waiting
+ 			alert('Waiting for result');
+ 		}
  		if (request.readyState == 4){ //Request is complete
  			
  			var success = false;
- 			var content = 'Error contactiong web service';
+ 			var content = 'Error contacting web service';
  			try{
  				var data = request.responseText;
  				var res = eval('('+data+')');

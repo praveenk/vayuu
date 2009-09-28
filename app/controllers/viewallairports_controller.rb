@@ -1,4 +1,19 @@
 class ViewallairportsController < ApplicationController
+ def get_airport_review
+ 	airportcode = params[:airportcode]
+ 	
+ 	reviews = Userreview.find :all, :conditions => ["airport_code = ?", airportcode]
+ 	#logger.debug("No. of reviews is #{reviews.size}")
+ 	#logger.debug("The review is #{reviews[0].review_content}")
+ 	allreviews = Array.new
+ 	reviews.each do |review|
+ 		singlereview = { :username => review.username,
+ 				 :review_content => review.review_content }
+ 		allreviews.push(singlereview)
+ 	end 				 
+ 	render :text => allreviews.to_json
+ end
+ 
  def clustered_airports
  	ne = params[:ne].split(',').collect{|e|e.to_f}
  	sw = params[:sw].split(',').collect{|e|e.to_f}
@@ -13,7 +28,7 @@ class ViewallairportsController < ApplicationController
   lat_span = 0
   clustered = Hash.new
   
-  logger.debug("Starting clustering with #{airports.length} airports")
+  #logger.debug("Starting clustering with #{airports.length} airports")
   
   loop do
      # Each cell in the grid starts out at 1/30th the longitudinal span and then increases in size
@@ -31,7 +46,7 @@ class ViewallairportsController < ApplicationController
       (clustered[key]=Array.new) if !clustered.has_key?(key)
       clustered[key].push(airport)
     end
-    logger.debug("Current clustering has #{clustered.size} elements")
+    #logger.debug("Current clustering has #{clustered.size} elements")
     break unless clustered.length > max_markers
   end
   
