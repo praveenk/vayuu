@@ -67,16 +67,16 @@ function init() {
         map.getInfoWindow().show();
 
         updateMarkers();
-        
+
         GEvent.addListener(map, 'zoomend', function() {
         	updateMarkers();
         });
-        
+
         GEvent.addListener(map, 'moveend', function() {
 	        	updateMarkers();
         });
     }
-    
+
  //Function to create clustered airport markers
  function updateMarkers() {
  	map.clearOverlays();
@@ -84,10 +84,10 @@ function init() {
  	var southWest = bounds.getSouthWest();
  	var northEast = bounds.getNorthEast();
  	var url= '/viewallairports/clustered_airports?ne=' + northEast.toUrlValue() + '&sw= ' + southWest.toUrlValue();
- 	
+
  	//log for debugging
  	//GLog.writeUrl(url);
- 	
+
  	//AJAX to retrieve airports dynamically
  	var request = GXmlHttp.create();
  	request.open('GET', url, true);
@@ -95,7 +95,7 @@ function init() {
  		if (request.readyState == 4){
  			var data = request.responseText;
  			var points = eval('('+data+')');
- 			
+
  			//create each point from list
  			for (var i=0; i < points.length; i++){
  				//var point = new GLatLng(points[i].latitude, points[i].longitude);
@@ -106,38 +106,37 @@ function init() {
  	}
  	request.send(null);
  }
- 
+
  // Create a table for the reviews section
  // Return the Body dom element
  //
  function createReviewsTable(airport_code) {
- 
- 
- 	//Call the controller to fetch the reviews for this airport
+
+	//Call the controller to fetch the reviews for this airport
  	var url= '/viewallairports/get_airport_review?airportcode='+airport_code;
  	var reviews_html;
-	 	
+
 	 //log for debugging
-	 //GLog.writeUrl(url);
-	 	
-	 //AJAX to retrieve airports dynamically
+	 GLog.writeUrl(url);
+
 	 var request = GXmlHttp.create();
 	 request.open('GET', url, true);
 	 request.onreadystatechange = function() {
 	 	if (request.readyState == 4){
 	 		var data = request.responseText;
 	 		reviews = eval('('+data+')');
-	 			
+
 	 		//alert('Review retrived ='+reviews.length);
-	 		
+
 	 		//Create the HTML page that shows in the window
 			         // get the reference for the body
 			        // var body = document.getElementsByTagName("body")[0];
 			 	 var body = document.createElement("body");
 			         // creates a <table> element and a <tbody> element
-			         var tbl     = document.createElement("table");
-			         var tblBody = document.createElement("tbody");
-			         
+			     var tbl     = document.createElement("table");
+			     tbl.setAttribute("width", "75%");
+			     var tblBody = document.createElement("tbody");
+
 			         //Create Header Row
 			         var row1 = document.createElement("tr");
 				 var hCell1 = document.createElement("td");
@@ -148,71 +147,71 @@ function init() {
 				 var hCell2Text = document.createTextNode("Review");
 				 hCell2.appendChild(hCell2Text);
 				 row1.appendChild(hCell2);
-				          
+
 			         tblBody.appendChild(row1);
-			         
+
 			         var row2;
 			         var hCell21;
 			         var hCell21Text;
 			         var hCell22;
 			         var hCell22Text;
-			         
+
 			       //  alert('Another Alert: Review ='+reviews.length);
-			         
-			        
+
+
 			         for(var i=0; i<reviews.length; i++){
-			         
+
 			         	row2 = document.createElement("tr");
 			         	//Name column
 					hCell21 = document.createElement("td");
 					hCell21Text = document.createTextNode(reviews[i].username);
 					hCell21.appendChild(hCell21Text);
 					row2.appendChild(hCell21);
-					
-					
+
+
 					//Review column
 					var hCell22 = document.createElement("td");
 					var hCell22Text = document.createTextNode(reviews[i].review_content);
 					hCell22.appendChild(hCell22Text);
-					row2.appendChild(hCell22);    
-			         	tblBody.appendChild(row2); 
-			         
-			         }   
-			         
-			        
-			 
+					row2.appendChild(hCell22);
+			         	tblBody.appendChild(row2);
+
+			         }
+
+
+
 			         // put the <tbody> in the <table>
 			         tbl.appendChild(tblBody);
 			         // sets the border attribute of tbl to 2;
 			         tbl.setAttribute("border", "2");
-			         
+
 			         // appends <table> into <body>
 			         body.appendChild(tbl);
-			         
+
 			         /**
 			         var url_path = "http://localhost:3000/userreviews/new";
-				 
-				 
+
+
 				 var elem = document.createelement("input");
 				 elem.setAttribute("id", "NewReview");
 				 elem.setAttribute("value", "Add New Review");
 				 elem.setAttribute("alt", "New Review");
 				 elem.setAttribute("type", "button");
 				 elem.onClick = window.open(url_path);
-				 
+
 			         body.appendChild(elem);
 			         **/
          			 airport_reviews = body;
-	 		
-	 		
+
+
 	 		}
 	 }
  	request.send(null);
-              
-         
+
+
      }
 
- 
+
  function createMarker(point, type) {
 	 var markerPoint = new GLatLng(point.latitude, point.longitude);
 	 if(point.type == 'c'){
@@ -220,34 +219,32 @@ function init() {
  	} else {
  		var marker = new GMarker(markerPoint);
  	}
- 	
- 	      
+
+
       GEvent.addListener(marker, 'click',
  	        function() {
- 	        	
- 	 	
- 	        	var airport_info = "Airport Id = " + point.airport_id + "<br>";
+
+ 	 	       	var airport_info = "Airport Id = " + point.airport_id + "<br>";
 		    	airport_info += "Airport Name = " + point.airport_name + "<br>";
-		   	airport_info += "Location = " + point.city;
-		    	airport_info += ", " + point.state;
-		    
-		   			   	
+		   		airport_info += "Location = " + point.city;
+		    	airport_info += ", " + point.state + "<br>";
+		    	airport_info += "Chart Name = " + point.chart_name + "<br>";
+		    	airport_info += "Airport Elevation = " + point.airport_elev + "<br>";
+		    	airport_info += "Available fuel = " + point.fuel_types + "<br>";
+
+
+
 		    	var tab1 = new GInfoWindowTab("Minimap", '<div id="detailmap"></div>');
 		    	var tab2 = new GInfoWindowTab("Info", airport_info);
-		    	
-		    	//Add event listener to the reviews tab to pull up the reviews
-		    	//Unable to attach to the third tab. The event is fired when the marker is clicked so I'm adding the event to the 
-		    	//second tab so that the airport_reviews var can be updated before the third tab is created
-			//tab1.onclick = createReviewsTable(point.airport_id);
-			
-			createReviewsTable(point.airport_id);
-			
+
+		    	createReviewsTable(point.airport_id);
+
 		    	var tab3 = new GInfoWindowTab("Reviews", airport_reviews);
-		    	
-		    		    	
+
+
 		    	var infoTabs = [tab1, tab2, tab3];
 		    	marker.openInfoWindowTabsHtml(infoTabs);
-		      
+
 		      	var dMapDiv = document.getElementById("detailmap");
 		      	var detailMap = new GMap2(dMapDiv);
 		      	detailMap.setMapType(G_SATELLITE_MAP);
@@ -255,15 +252,11 @@ function init() {
 		      	detailMap.addControl(new GSmallMapControl());
 		      	GEvent.addListener(detailMap, "zoomend", miniMapZoomEnd);
       			GEvent.addListener(detailMap, "moveend", miniMapMoveEnd);
- 	           
+
  	        }
  	    );
- 	  
- 	    
- 	  // GEvent.addListener(marker, 'click', marker.showMapBlowup());
-	     	      
- 	    
- 	    
+
+
  	return marker;
  }
 
@@ -274,25 +267,25 @@ function createSingleReview() {
  	var airportcode = document.getElementById("airportcode").value;
  	var reviewcontent = document.getElementById("reviewcontent").value;
  	var pilotname = document.getElementById("pilotname").value;
- 	
+
  	var getVars = "?revs[pilotname]=" + pilotname + "&revs[airport_id]=" + airportcode + "&revs[reviewcontent]=" + reviewcontent;
- 	
+
  	//log for debugging
  	GLog.writeUrl(url);
- 	
+
  	//AJAX to retrieve airports dynamically
  	var request = GXmlHttp.create();
- 	
+
  	//Call the appropriate action in the controller
  	request.open('GET', 'createreview' + getVars, true);
- 	
- 		
+
+
  	request.onreadystatechange = function() {
  		if (request.readyState == 1 ){ //Request is waiting
  			alert('Waiting for result');
  		}
  		if (request.readyState == 4){ //Request is complete
- 			
+
  			var success = false;
  			var content = 'Error contacting web service';
  			try{
@@ -304,7 +297,7 @@ function createSingleReview() {
  			catch(e){
  				success = false;
  			}
- 			
+
  			//create each point from list
  			if(!success){
  				alert(content);
