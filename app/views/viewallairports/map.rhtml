@@ -15,14 +15,37 @@
     </script> 
 	-->
 	 
-    <%=stylesheet_link_tag 'style'%>
+   <-- <%=stylesheet_link_tag 'style'%> -->
 
 </head>
-<body>
+<body id="body" class="sidebar-off">
   	
-  	<div id="banner">Vayuu</div>
-  	<div id="map"></div>
-	 
+  	<!-- <div id="banner">Vayuu</div> -->
+  	
+  <div id="map"></div>
+  
+  <!--
+  	<div id="map-wrapper">
+  		<div id="map"></div>
+  	</div> 
+  	-->
+  	
+  	<div id="toolbar">
+	  		<h3>Vayuu</h3>
+	  		<%link_to_function 'hide',"Element.addClassName('body','sidebar-off')", {:id=>'button-sidebar-hide'}%>
+	  		<ul id="navlist">
+	  			<li>Sign In</li>
+	  			<li>My Trips</li>
+	  			<li>About</li>
+	  			<li><%link_to_function 'hide',"Element.addClassName('body','sidebar-off')", {:id=>'button-sidebar-hide'}%></li>
+	  			<li><%link_to_function 'show',"Element.removeClassName('body','sidebar-off')", {:id=>'button-sidebar-show'}%></li>
+	  		</ul>
+  	</div>
+  	
+	<div id="sidebar">
+	   		<p>Airport Reviews go in here...blah ..blah..blah ... </p>
+  	</div>
+  	
  
      		
 </body>

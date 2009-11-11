@@ -231,8 +231,7 @@ function init() {
 		   	airport_info += "Location = " + point.city;
 		    	airport_info += ", " + point.state;
 		    
-		   	createReviewsTable(point.airport_id);
-		   	
+		   			   	
 		    	var tab1 = new GInfoWindowTab("Minimap", '<div id="detailmap"></div>');
 		    	var tab2 = new GInfoWindowTab("Info", airport_info);
 		    	
@@ -240,11 +239,12 @@ function init() {
 		    	//Unable to attach to the third tab. The event is fired when the marker is clicked so I'm adding the event to the 
 		    	//second tab so that the airport_reviews var can be updated before the third tab is created
 			//tab1.onclick = createReviewsTable(point.airport_id);
-		    	
+			
+			createReviewsTable(point.airport_id);
+			
 		    	var tab3 = new GInfoWindowTab("Reviews", airport_reviews);
 		    	
-		    	
-		    	
+		    		    	
 		    	var infoTabs = [tab1, tab2, tab3];
 		    	marker.openInfoWindowTabsHtml(infoTabs);
 		      
