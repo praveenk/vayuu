@@ -6,6 +6,8 @@ var centerLongitude = -122;
 
 var airport_reviews;
 
+var userreview_page;
+
 
 //Create new icon for cluster of airports
 var iconCluster = new GIcon();
@@ -221,6 +223,8 @@ function init() {
  	}
 
 
+	//Event for the airport balloon.
+	//
       GEvent.addListener(marker, 'click',
  	        function() {
 
@@ -233,16 +237,18 @@ function init() {
 		    	airport_info += "Available fuel = " + point.fuel_types + "<br>";
 
 
+		    	fetchAirportReviews(point);
+
 
 		    	var tab1 = new GInfoWindowTab("Minimap", '<div id="detailmap"></div>');
 		    	var tab2 = new GInfoWindowTab("Info", airport_info);
 
-		    	createReviewsTable(point.airport_id);
+		    	//createReviewsTable(point.airport_id);
 
-		    	var tab3 = new GInfoWindowTab("Reviews", airport_reviews);
+		    	//var tab3 = new GInfoWindowTab("Reviews", airport_reviews);
 
 
-		    	var infoTabs = [tab1, tab2, tab3];
+		    	var infoTabs = [tab1, tab2];
 		    	marker.openInfoWindowTabsHtml(infoTabs);
 
 		      	var dMapDiv = document.getElementById("detailmap");
@@ -253,64 +259,112 @@ function init() {
 		      	GEvent.addListener(detailMap, "zoomend", miniMapZoomEnd);
       			GEvent.addListener(detailMap, "moveend", miniMapMoveEnd);
 
+
  	        }
  	    );
 
-
-
-
- 	return marker;
+		return marker;
  }
 
 }
 
-function createSingleReview() {
- 	//retrieve content from Form
- 	var airportcode = document.getElementById("airportcode").value;
- 	var reviewcontent = document.getElementById("reviewcontent").value;
- 	var pilotname = document.getElementById("pilotname").value;
+function fetchAirportReviews(point){
 
- 	var getVars = "?revs[pilotname]=" + pilotname + "&revs[airport_id]=" + airportcode + "&revs[reviewcontent]=" + reviewcontent;
-
- 	//log for debugging
- 	GLog.writeUrl(url);
-
- 	//AJAX to retrieve airports dynamically
- 	var request = GXmlHttp.create();
-
- 	//Call the appropriate action in the controller
- 	request.open('GET', 'createreview' + getVars, true);
+	//for user reviews
+	userreview_page = document.getElementById("sidebar");
 
 
- 	request.onreadystatechange = function() {
- 		if (request.readyState == 1 ){ //Request is waiting
- 			alert('Waiting for result');
- 		}
- 		if (request.readyState == 4){ //Request is complete
+	// create a new paragraph
+	newpara = document.createElement("p");
+	// now some text
+	sometext = document.createTextNode(point.airport_name + " Airport User reviews");
+	// add the text to the paragraph
+	newpara.appendChild(sometext);
+	userreview_page.appendChild(newpara);
 
- 			var success = false;
- 			var content = 'Error contacting web service';
- 			try{
- 				var data = request.responseText;
- 				var res = eval('('+data+')');
- 				content = res.content;
- 				success = res.success;
- 			}
- 			catch(e){
- 				success = false;
- 			}
 
- 			//create each point from list
- 			if(!success){
- 				alert(content);
- 			}else{
- 				alert('Success');
- 			}
- 		}
- 	}
- 	request.send(null);
- 	return false;
- }
+	//Real AJAX call to the DB
+	//Call the controller to fetch the reviews for this airport
+	 	var url= '/viewallairports/get_airport_review?airportcode='+point.airport_id;
+	 	var reviews_html;
+
+		 //log for debugging
+		 //GLog.writeUrl(url);
+
+		 var request = GXmlHttp.create();
+		 request.open('GET', url, true);
+		 request.onreadystatechange = function() {
+		 	if (request.readyState == 4){
+		 		var data = request.responseText;
+		 		reviews = eval('('+data+')');
+
+		 		//alert('Review retrived ='+reviews.length);
+
+		 	       // creates a <table> element and a <tbody> element
+				     var tbl     = document.createElement("table");
+				     tbl.setAttribute("width", "85%");
+				     var tblBody = document.createElement("tbody");
+
+				         //Create Header Row
+				         var row1 = document.createElement("tr");
+					 var hCell1 = document.createElement("td");
+					 var hCell1Text = document.createTextNode("User");
+					 hCell1.appendChild(hCell1Text);
+					 row1.appendChild(hCell1);
+					 var hCell2 = document.createElement("td");
+					 var hCell2Text = document.createTextNode("Review");
+					 hCell2.appendChild(hCell2Text);
+					 row1.appendChild(hCell2);
+
+				         tblBody.appendChild(row1);
+
+				         var row2;
+				         var hCell21;
+				         var hCell21Text;
+				         var hCell22;
+				         var hCell22Text;
+
+				       //  alert('Another Alert: Review ='+reviews.length);
+
+
+				         for(var i=0; i<reviews.length; i++){
+
+				         	row2 = document.createElement("tr");
+				         	//Name column
+						hCell21 = document.createElement("td");
+						hCell21Text = document.createTextNode(reviews[i].username);
+						hCell21.appendChild(hCell21Text);
+						row2.appendChild(hCell21);
+
+
+						//Review column
+						var hCell22 = document.createElement("td");
+						var hCell22Text = document.createTextNode(reviews[i].review_content);
+						hCell22.appendChild(hCell22Text);
+						row2.appendChild(hCell22);
+				         	tblBody.appendChild(row2);
+
+				         }
+
+				         // put the <tbody> in the <table>
+				         tbl.appendChild(tblBody);
+				         // sets the border attribute of tbl to 2;
+				         tbl.setAttribute("border", "1");
+
+				         // appends <table> into <body>
+				         userreview_page.appendChild(tbl);
+
+		 		}
+		 }
+	 	request.send(null);
+
+
+
+
+}
+
+
+
 
 window.onload = init;
 window.onunload = GUnload;

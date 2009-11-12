@@ -24567,3 +24567,1579 @@ SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
   Parameters: {"action"=>"get_airport_review", "airportcode"=>"SFO", "controller"=>"viewallairports"}
   [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'SFO') [0m
 Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=SFO]
+
+
+Processing ViewallairportsController#map (for 127.0.0.1 at 2009-11-12 00:31:50) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"map", "controller"=>"viewallairports"}
+Rendering viewallairports/map
+Completed in 0.00010 (10000 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/map]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 00:31:51) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.162636,-121.209412", "sw"=>" 37.472678,-122.791443", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.000000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -122.791443 AND longitude < -121.209412 AND latitude <= 38.162636 AND latitude >= 37.472678 AND airport_type = 'AIRPORT') [0m
+  [4;35;1mAirport Columns (0.016000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (34%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.162636,-121.209412&sw=%2037.472678,-122.791443]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 00:31:56) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"HWD", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'HWD') [0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=HWD]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 00:32:00) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"HWD", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'HWD') [0m
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=HWD]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 00:32:15) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"LVK", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.015000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'LVK') [0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01500 (48%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=LVK]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 00:32:15) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.193942,-120.956726", "sw"=>" 37.314475,-122.791443", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;35;1mAirport Load (0.078000)[0m   [0mSELECT * FROM `airports` WHERE (longitude > -122.791443 AND longitude < -120.956726 AND latitude <= 38.193942 AND latitude >= 37.314475 AND airport_type = 'AIRPORT') [0m
+  [4;36;1mAirport Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM `airports`[0m
+Completed in 0.11000 (9 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.07800 (70%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.193942,-120.956726&sw=%2037.314475,-122.791443]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 00:32:16) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"LVK", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'LVK') [0m
+Completed in 0.03200 (31 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=LVK]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 00:34:19) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.256515,-121.083069", "sw"=>" 37.377797,-122.917786", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.062000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -122.917786 AND longitude < -121.083069 AND latitude <= 38.256515 AND latitude >= 37.377797 AND airport_type = 'AIRPORT') [0m
+  [4;35;1mAirport Columns (0.016000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Completed in 0.10900 (9 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.07800 (71%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.256515,-121.083069&sw=%2037.377797,-122.917786]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 00:35:00) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.262985,-121.231384", "sw"=>" 37.384344,-123.066101", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.062000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -123.066101 AND longitude < -121.231384 AND latitude <= 38.262985 AND latitude >= 37.384344 AND airport_type = 'AIRPORT') [0m
+  [4;35;1mAirport Columns (0.016000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Completed in 0.11000 (9 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.07800 (70%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.262985,-121.231384&sw=%2037.384344,-123.066101]
+
+
+Processing ViewallairportsController#map (for 127.0.0.1 at 2009-11-12 00:35:05) [GET]
+  Session ID: a6523513b1ccd88e455500748ba396f4
+  Parameters: {"action"=>"map", "controller"=>"viewallairports"}
+Rendering viewallairports/map
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/map]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 00:35:07) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.256515,-121.083069", "sw"=>" 37.377797,-122.917786", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.015000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -122.917786 AND longitude < -121.083069 AND latitude <= 38.256515 AND latitude >= 37.377797 AND airport_type = 'AIRPORT') [0m
+  [4;35;1mAirport Columns (0.000000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Completed in 0.06200 (16 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01500 (24%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.256515,-121.083069&sw=%2037.377797,-122.917786]
+
+
+Processing ViewallairportsController#map (for 127.0.0.1 at 2009-11-12 00:35:16) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"map", "controller"=>"viewallairports"}
+Rendering viewallairports/map
+Completed in 0.00010 (10000 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/map]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 00:35:17) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.256515,-121.083069", "sw"=>" 37.377797,-122.917786", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.015000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -122.917786 AND longitude < -121.083069 AND latitude <= 38.256515 AND latitude >= 37.377797 AND airport_type = 'AIRPORT') [0m
+  [4;35;1mAirport Columns (0.016000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.03100 (65%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.256515,-121.083069&sw=%2037.377797,-122.917786]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 00:36:45) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"CCR", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'CCR') [0m
+Completed in 0.00010 (10000 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=CCR]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 00:36:47) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"CCR", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'CCR') [0m
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=CCR]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 00:36:48) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.487995,-121.083069", "sw"=>" 37.90845,-122.917786", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.078000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -122.917786 AND longitude < -121.083069 AND latitude <= 38.487995 AND latitude >= 37.90845 AND airport_type = 'AIRPORT') [0m
+  [4;35;1mAirport Columns (0.000000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Completed in 0.10900 (9 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.07800 (71%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.487995,-121.083069&sw=%2037.90845,-122.917786]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 00:36:50) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"CCR", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'CCR') [0m
+Completed in 0.00010 (10000 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=CCR]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 00:37:19) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"CCR", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'CCR') [0m
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=CCR]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 00:37:44) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"CCR", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'CCR') [0m
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=CCR]
+
+
+Processing ViewallairportsController#map (for 127.0.0.1 at 2009-11-12 00:39:42) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"map", "controller"=>"viewallairports"}
+Rendering viewallairports/map
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.01500 (100%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/map]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 00:39:42) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.109708,-121.087189", "sw"=>" 37.527154,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;35;1mAirport Load (0.062000)[0m   [0mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.109708 AND latitude >= 37.527154 AND airport_type = 'AIRPORT') [0m
+  [4;36;1mAirport Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM `airports`[0m
+Completed in 0.12500 (8 reqs/sec) | Rendering: 0.01600 (12%) | DB: 0.07800 (62%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.109708,-121.087189&sw=%2037.527154,-122.915039]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 00:42:02) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"LVK", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'LVK') [0m
+Completed in 0.00010 (10000 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=LVK]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 00:42:04) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"LVK", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'LVK') [0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=LVK]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 00:42:09) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"LVK", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'LVK') [0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=LVK]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 00:42:10) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.193942,-121.087189", "sw"=>" 37.612056,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.062000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.193942 AND latitude >= 37.612056 AND airport_type = 'AIRPORT') [0m
+  [4;35;1mAirport Columns (0.031000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Completed in 0.10900 (9 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.09300 (85%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.193942,-121.087189&sw=%2037.612056,-122.915039]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 00:42:12) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"LVK", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'LVK') [0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=LVK]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 00:42:33) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"HWD", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'HWD') [0m
+Completed in 0.03200 (31 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=HWD]
+
+
+Processing ViewallairportsController#map (for 127.0.0.1 at 2009-11-12 00:46:33) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"map", "controller"=>"viewallairports"}
+Rendering viewallairports/map
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.01600 (100%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/map]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 00:46:33) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.109708,-121.087189", "sw"=>" 37.527154,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.016000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.109708 AND latitude >= 37.527154 AND airport_type = 'AIRPORT') [0m
+  [4;35;1mAirport Columns (0.015000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Completed in 0.06300 (15 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.03100 (49%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.109708,-121.087189&sw=%2037.527154,-122.915039]
+
+
+Processing ViewallairportsController#map (for 127.0.0.1 at 2009-11-12 00:49:05) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"map", "controller"=>"viewallairports"}
+Rendering viewallairports/map
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/map]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 00:49:05) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.256515,-121.087189", "sw"=>" 37.377797,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.078000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.256515 AND latitude >= 37.377797 AND airport_type = 'AIRPORT') [0m
+  [4;35;1mAirport Columns (0.016000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Completed in 0.12500 (8 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.09400 (75%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.256515,-121.087189&sw=%2037.377797,-122.915039]
+
+
+Processing ViewallairportsController#map (for 127.0.0.1 at 2009-11-12 00:49:08) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"map", "controller"=>"viewallairports"}
+Rendering viewallairports/map
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/map]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 00:49:08) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.256515,-121.087189", "sw"=>" 37.377797,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.016000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.256515 AND latitude >= 37.377797 AND airport_type = 'AIRPORT') [0m
+  [4;35;1mAirport Columns (0.000000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Completed in 0.06300 (15 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (25%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.256515,-121.087189&sw=%2037.377797,-122.915039]
+
+
+Processing ViewallairportsController#map (for 127.0.0.1 at 2009-11-12 00:49:29) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"map", "controller"=>"viewallairports"}
+Rendering viewallairports/map
+Completed in 0.00010 (10000 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/map]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 00:49:34) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.109708,-121.087189", "sw"=>" 37.527154,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.000000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.109708 AND latitude >= 37.527154 AND airport_type = 'AIRPORT') [0m
+  [4;35;1mAirport Columns (0.000000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Completed in 0.06300 (15 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.109708,-121.087189&sw=%2037.527154,-122.915039]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 00:55:29) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.256515,-121.087189", "sw"=>" 37.377797,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.000000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.256515 AND latitude >= 37.377797 AND airport_type = 'AIRPORT') [0m
+  [4;35;1mAirport Columns (0.015000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01500 (31%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.256515,-121.087189&sw=%2037.377797,-122.915039]
+
+
+Processing ViewallairportsController#map (for 127.0.0.1 at 2009-11-12 00:55:57) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"map", "controller"=>"viewallairports"}
+Rendering viewallairports/map
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/map]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 00:55:59) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.109708,-121.087189", "sw"=>" 37.527154,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.000000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.109708 AND latitude >= 37.527154 AND airport_type = 'AIRPORT') [0m
+  [4;35;1mAirport Columns (0.016000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (34%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.109708,-121.087189&sw=%2037.527154,-122.915039]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 00:56:46) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"HWD", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'HWD') [0m
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=HWD]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 00:57:23) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"OAK", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'OAK') [0m
+  [4;36;1mUserreview Columns (0.015000)[0m   [0;1mSHOW FIELDS FROM `userreviews`[0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01500 (48%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=OAK]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 00:57:23) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.22092,-121.087189", "sw"=>" 37.639247,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;35;1mAirport Load (0.063000)[0m   [0mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.22092 AND latitude >= 37.639247 AND airport_type = 'AIRPORT') [0m
+  [4;36;1mAirport Columns (0.015000)[0m   [0;1mSHOW FIELDS FROM `airports`[0m
+Completed in 0.11000 (9 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.07800 (70%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.22092,-121.087189&sw=%2037.639247,-122.915039]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 00:57:26) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"OAK", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'OAK') [0m
+  [4;36;1mUserreview Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM `userreviews`[0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=OAK]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:00:20) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"LVK", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'LVK') [0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=LVK]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:00:30) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"63CN", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = '63CN') [0m
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=63CN]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:00:37) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"LVK", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'LVK') [0m
+Completed in 0.03200 (31 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=LVK]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:00:39) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"63CN", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = '63CN') [0m
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=63CN]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:00:40) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"TCY", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'TCY') [0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=TCY]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:00:43) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"CCR", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.016000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'CCR') [0m
+Completed in 0.03200 (31 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (50%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=CCR]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:00:43) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.487995,-121.087189", "sw"=>" 37.90845,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;35;1mAirport Load (0.078000)[0m   [0mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.487995 AND latitude >= 37.90845 AND airport_type = 'AIRPORT') [0m
+  [4;36;1mAirport Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM `airports`[0m
+Completed in 0.11000 (9 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.07800 (70%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.487995,-121.087189&sw=%2037.90845,-122.915039]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:00:46) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"CCR", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'CCR') [0m
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=CCR]
+
+
+Processing ViewallairportsController#map (for 127.0.0.1 at 2009-11-12 01:00:55) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"map", "controller"=>"viewallairports"}
+Rendering viewallairports/map
+Completed in 0.00010 (10000 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/map]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:00:55) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.109708,-121.087189", "sw"=>" 37.527154,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.000000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.109708 AND latitude >= 37.527154 AND airport_type = 'AIRPORT') [0m
+  [4;35;1mAirport Columns (0.015000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Completed in 0.06300 (15 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01500 (23%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.109708,-121.087189&sw=%2037.527154,-122.915039]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:01:54) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"LVK", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'LVK') [0m
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=LVK]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:02:11) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.193942,-121.087189", "sw"=>" 37.612056,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;35;1mAirport Load (0.000000)[0m   [0mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.193942 AND latitude >= 37.612056 AND airport_type = 'AIRPORT') [0m
+  [4;36;1mAirport Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM `airports`[0m
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (34%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.193942,-121.087189&sw=%2037.612056,-122.915039]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:02:20) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"LVK", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'LVK') [0m
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=LVK]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:02:34) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.192863,-121.085815", "sw"=>" 37.610968,-122.913666", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.063000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -122.913666 AND longitude < -121.085815 AND latitude <= 38.192863 AND latitude >= 37.610968 AND airport_type = 'AIRPORT') [0m
+  [4;35;1mAirport Columns (0.015000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Completed in 0.10900 (9 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.07800 (71%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.192863,-121.085815&sw=%2037.610968,-122.913666]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:02:41) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"C83", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'C83') [0m
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=C83]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:02:41) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.355657,-121.085815", "sw"=>" 37.775057,-122.913666", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;35;1mAirport Load (0.062000)[0m   [0mSELECT * FROM `airports` WHERE (longitude > -122.913666 AND longitude < -121.085815 AND latitude <= 38.355657 AND latitude >= 37.775057 AND airport_type = 'AIRPORT') [0m
+  [4;36;1mAirport Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM `airports`[0m
+Completed in 0.11000 (9 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.07800 (70%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.355657,-121.085815&sw=%2037.775057,-122.913666]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:03:08) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"CCR", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'CCR') [0m
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=CCR]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:03:09) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.487995,-121.085815", "sw"=>" 37.90845,-122.913666", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.062000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -122.913666 AND longitude < -121.085815 AND latitude <= 38.487995 AND latitude >= 37.90845 AND airport_type = 'AIRPORT') [0m
+  [4;35;1mAirport Columns (0.016000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Completed in 0.10900 (9 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.07800 (71%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.487995,-121.085815&sw=%2037.90845,-122.913666]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:03:14) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"CCR", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'CCR') [0m
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=CCR]
+
+
+Processing ViewallairportsController#map (for 127.0.0.1 at 2009-11-12 01:03:32) [GET]
+  Session ID: 3a410f91a1286069a678003a67a5920d
+  Parameters: {"action"=>"map", "controller"=>"viewallairports"}
+Rendering viewallairports/map
+Completed in 0.00010 (10000 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/map]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:03:33) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.256515,-121.087189", "sw"=>" 37.377797,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;35;1mAirport Load (0.000000)[0m   [0mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.256515 AND latitude >= 37.377797 AND airport_type = 'AIRPORT') [0m
+  [4;36;1mAirport Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM `airports`[0m
+Completed in 0.04600 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (34%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.256515,-121.087189&sw=%2037.377797,-122.915039]
+
+
+Processing ViewallairportsController#map (for 127.0.0.1 at 2009-11-12 01:03:34) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"map", "controller"=>"viewallairports"}
+Rendering viewallairports/map
+Completed in 0.00010 (10000 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/map]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:03:35) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.109708,-121.087189", "sw"=>" 37.527154,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;35;1mAirport Load (0.000000)[0m   [0mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.109708 AND latitude >= 37.527154 AND airport_type = 'AIRPORT') [0m
+  [4;36;1mAirport Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM `airports`[0m
+Completed in 0.04600 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (34%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.109708,-121.087189&sw=%2037.527154,-122.915039]
+
+
+Processing ViewallairportsController#map (for 127.0.0.1 at 2009-11-12 01:03:46) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"map", "controller"=>"viewallairports"}
+Rendering viewallairports/map
+Completed in 0.00010 (10000 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/map]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:03:46) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.256515,-121.087189", "sw"=>" 37.377797,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;35;1mAirport Load (0.000000)[0m   [0mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.256515 AND latitude >= 37.377797 AND airport_type = 'AIRPORT') [0m
+  [4;36;1mAirport Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM `airports`[0m
+Completed in 0.06300 (15 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.256515,-121.087189&sw=%2037.377797,-122.915039]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:03:51) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"HWD", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'HWD') [0m
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=HWD]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:03:53) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"HWD", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'HWD') [0m
+Completed in 0.03200 (31 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=HWD]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:03:56) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"LVK", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'LVK') [0m
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=LVK]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:03:57) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"63CN", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = '63CN') [0m
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=63CN]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:04:00) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"SFO", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'SFO') [0m
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=SFO]
+
+
+Processing ViewallairportsController#map (for 127.0.0.1 at 2009-11-12 01:06:26) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"map", "controller"=>"viewallairports"}
+Rendering viewallairports/map
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/map]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:06:27) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.256515,-121.087189", "sw"=>" 37.377797,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.016000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.256515 AND latitude >= 37.377797 AND airport_type = 'AIRPORT') [0m
+  [4;35;1mAirport Columns (0.000000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Completed in 0.06200 (16 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (25%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.256515,-121.087189&sw=%2037.377797,-122.915039]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:06:31) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"HWD", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'HWD') [0m
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=HWD]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:06:33) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"HWD", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'HWD') [0m
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=HWD]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:06:33) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"HWD", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'HWD') [0m
+Completed in 0.00010 (10000 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=HWD]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:06:36) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"LVK", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'LVK') [0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=LVK]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:06:41) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"HWD", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'HWD') [0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=HWD]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:06:43) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"OAK", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'OAK') [0m
+  [4;36;1mUserreview Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM `userreviews`[0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (51%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=OAK]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:07:37) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"CCR", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'CCR') [0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=CCR]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:07:37) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.487995,-121.087189", "sw"=>" 37.99508,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.062000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.487995 AND latitude >= 37.99508 AND airport_type = 'AIRPORT') [0m
+  [4;35;1mAirport Columns (0.016000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Completed in 0.10900 (9 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.07800 (71%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.487995,-121.087189&sw=%2037.99508,-122.915039]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:07:40) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"APC", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'APC') [0m
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=APC]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:07:40) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.710161,-121.087189", "sw"=>" 38.218762,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;35;1mAirport Load (0.062000)[0m   [0mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.710161 AND latitude >= 38.218762 AND airport_type = 'AIRPORT') [0m
+  [4;36;1mAirport Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM `airports`[0m
+Completed in 0.09300 (10 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.06200 (66%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.710161,-121.087189&sw=%2038.218762,-122.915039]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:07:44) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"SUU", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'SUU') [0m
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=SUU]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:07:44) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.759438,-121.087189", "sw"=>" 38.268376,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.062000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.759438 AND latitude >= 38.268376 AND airport_type = 'AIRPORT') [0m
+  [4;35;1mAirport Columns (0.016000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Completed in 0.11000 (9 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.07800 (70%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.759438,-121.087189&sw=%2038.268376,-122.915039]
+
+
+Processing ViewallairportsController#map (for 127.0.0.1 at 2009-11-12 01:08:09) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"map", "controller"=>"viewallairports"}
+Rendering viewallairports/map
+Completed in 0.00010 (10000 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/map]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:08:09) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.256515,-121.087189", "sw"=>" 37.377797,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.015000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.256515 AND latitude >= 37.377797 AND airport_type = 'AIRPORT') [0m
+  [4;35;1mAirport Columns (0.016000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Completed in 0.18700 (5 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.03100 (16%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.256515,-121.087189&sw=%2037.377797,-122.915039]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:08:11) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"HWD", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'HWD') [0m
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=HWD]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:08:13) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"HWD", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'HWD') [0m
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=HWD]
+
+
+Processing ViewallairportsController#map (for 127.0.0.1 at 2009-11-12 01:08:30) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"map", "controller"=>"viewallairports"}
+Rendering viewallairports/map
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/map]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:08:31) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.066474,-121.087189", "sw"=>" 37.570705,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.078000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.066474 AND latitude >= 37.570705 AND airport_type = 'AIRPORT') [0m
+  [4;35;1mAirport Columns (0.016000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Completed in 0.10900 (9 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.09400 (86%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.066474,-121.087189&sw=%2037.570705,-122.915039]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:08:45) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"HWD", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'HWD') [0m
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=HWD]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:08:48) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"HWD", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'HWD') [0m
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=HWD]
+
+
+Processing ViewallairportsController#map (for 127.0.0.1 at 2009-11-12 01:09:27) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"map", "controller"=>"viewallairports"}
+Rendering viewallairports/map
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.01600 (100%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/map]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:09:28) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.066474,-121.087189", "sw"=>" 37.570705,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.000000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.066474 AND latitude >= 37.570705 AND airport_type = 'AIRPORT') [0m
+  [4;35;1mAirport Columns (0.000000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Completed in 0.03200 (31 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.066474,-121.087189&sw=%2037.570705,-122.915039]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:09:34) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"HWD", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'HWD') [0m
+Completed in 0.03200 (31 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=HWD]
+
+
+Processing ViewallairportsController#map (for 127.0.0.1 at 2009-11-12 01:11:13) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"map", "controller"=>"viewallairports"}
+Rendering viewallairports/map
+Completed in 0.00010 (10000 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/map]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:11:14) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.256515,-121.087189", "sw"=>" 37.377797,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;35;1mAirport Load (0.016000)[0m   [0mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.256515 AND latitude >= 37.377797 AND airport_type = 'AIRPORT') [0m
+  [4;36;1mAirport Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM `airports`[0m
+Completed in 0.06300 (15 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (25%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.256515,-121.087189&sw=%2037.377797,-122.915039]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:11:23) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"CCR", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'CCR') [0m
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=CCR]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:11:26) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"CCR", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'CCR') [0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=CCR]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:11:26) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.487995,-121.087189", "sw"=>" 37.99508,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;35;1mAirport Load (0.000000)[0m   [0mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.487995 AND latitude >= 37.99508 AND airport_type = 'AIRPORT') [0m
+  [4;36;1mAirport Columns (0.015000)[0m   [0;1mSHOW FIELDS FROM `airports`[0m
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01500 (31%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.487995,-121.087189&sw=%2037.99508,-122.915039]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:11:29) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"APC", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'APC') [0m
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=APC]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:11:29) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.710161,-121.087189", "sw"=>" 38.218762,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.015000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.710161 AND latitude >= 38.218762 AND airport_type = 'AIRPORT') [0m
+  [4;35;1mAirport Columns (0.000000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Completed in 0.17100 (5 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01500 (8%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.710161,-121.087189&sw=%2038.218762,-122.915039]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:11:31) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"SUU", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'SUU') [0m
+Completed in 0.03200 (31 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=SUU]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:11:32) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.759438,-121.083069", "sw"=>" 38.268376,-122.910919", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;35;1mAirport Load (0.063000)[0m   [0mSELECT * FROM `airports` WHERE (longitude > -122.910919 AND longitude < -121.083069 AND latitude <= 38.759438 AND latitude >= 38.268376 AND airport_type = 'AIRPORT') [0m
+  [4;36;1mAirport Columns (0.015000)[0m   [0;1mSHOW FIELDS FROM `airports`[0m
+Completed in 0.10900 (9 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.07800 (71%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.759438,-121.083069&sw=%2038.268376,-122.910919]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:11:40) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.759438,-121.080322", "sw"=>" 38.268376,-122.908173", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;35;1mAirport Load (0.078000)[0m   [0mSELECT * FROM `airports` WHERE (longitude > -122.908173 AND longitude < -121.080322 AND latitude <= 38.759438 AND latitude >= 38.268376 AND airport_type = 'AIRPORT') [0m
+  [4;36;1mAirport Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM `airports`[0m
+Completed in 0.10900 (9 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.07800 (71%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.759438,-121.080322&sw=%2038.268376,-122.908173]
+
+
+Processing ViewallairportsController#map (for 127.0.0.1 at 2009-11-12 01:11:42) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"map", "controller"=>"viewallairports"}
+Rendering viewallairports/map
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/map]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:11:42) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.066474,-121.087189", "sw"=>" 37.570705,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;35;1mAirport Load (0.000000)[0m   [0mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.066474 AND latitude >= 37.570705 AND airport_type = 'AIRPORT') [0m
+  [4;36;1mAirport Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM `airports`[0m
+Completed in 0.04600 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.066474,-121.087189&sw=%2037.570705,-122.915039]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:11:49) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.066474,-121.087189", "sw"=>" 37.570705,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;35;1mAirport Load (0.016000)[0m   [0mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.066474 AND latitude >= 37.570705 AND airport_type = 'AIRPORT') [0m
+  [4;36;1mAirport Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM `airports`[0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (51%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.066474,-121.087189&sw=%2037.570705,-122.915039]
+
+
+Processing ViewallairportsController#map (for 127.0.0.1 at 2009-11-12 01:11:50) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"map", "controller"=>"viewallairports"}
+Rendering viewallairports/map
+Completed in 0.00010 (10000 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/map]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:11:51) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.066474,-121.087189", "sw"=>" 37.570705,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;35;1mAirport Load (0.000000)[0m   [0mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.066474 AND latitude >= 37.570705 AND airport_type = 'AIRPORT') [0m
+  [4;36;1mAirport Columns (0.015000)[0m   [0;1mSHOW FIELDS FROM `airports`[0m
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01500 (31%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.066474,-121.087189&sw=%2037.570705,-122.915039]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:12:00) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.25328,-120.848236", "sw"=>" 37.374523,-122.676086", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;35;1mAirport Load (0.063000)[0m   [0mSELECT * FROM `airports` WHERE (longitude > -122.676086 AND longitude < -120.848236 AND latitude <= 38.25328 AND latitude >= 37.374523 AND airport_type = 'AIRPORT') [0m
+  [4;36;1mAirport Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM `airports`[0m
+Completed in 0.11000 (9 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.06300 (57%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.25328,-120.848236&sw=%2037.374523,-122.676086]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:12:04) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"LVK", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.016000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'LVK') [0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (51%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=LVK]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:12:06) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"LVK", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'LVK') [0m
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=LVK]
+
+
+Processing ViewallairportsController#map (for 127.0.0.1 at 2009-11-12 01:12:14) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"map", "controller"=>"viewallairports"}
+Rendering viewallairports/map
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/map]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:12:15) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.066474,-121.087189", "sw"=>" 37.570705,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;35;1mAirport Load (0.000000)[0m   [0mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.066474 AND latitude >= 37.570705 AND airport_type = 'AIRPORT') [0m
+  [4;36;1mAirport Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM `airports`[0m
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (34%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.066474,-121.087189&sw=%2037.570705,-122.915039]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:12:18) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"HWD", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'HWD') [0m
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=HWD]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:12:20) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"HWD", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'HWD') [0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=HWD]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:12:30) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.159396,-121.087189", "sw"=>" 37.664255,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;35;1mAirport Load (0.063000)[0m   [0mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.159396 AND latitude >= 37.664255 AND airport_type = 'AIRPORT') [0m
+  [4;36;1mAirport Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM `airports`[0m
+Completed in 0.09400 (10 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.07900 (84%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.159396,-121.087189&sw=%2037.664255,-122.915039]
+
+
+Processing ViewallairportsController#map (for 127.0.0.1 at 2009-11-12 01:14:14) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"map", "controller"=>"viewallairports"}
+Rendering viewallairports/map
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/map]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:14:15) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.256515,-121.087189", "sw"=>" 37.377797,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;35;1mAirport Load (0.016000)[0m   [0mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.256515 AND latitude >= 37.377797 AND airport_type = 'AIRPORT') [0m
+  [4;36;1mAirport Columns (0.015000)[0m   [0;1mSHOW FIELDS FROM `airports`[0m
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.03100 (65%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.256515,-121.087189&sw=%2037.377797,-122.915039]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:14:17) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"HWD", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'HWD') [0m
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=HWD]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:14:20) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"HWD", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'HWD') [0m
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=HWD]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:14:33) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"LVK", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'LVK') [0m
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=LVK]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:14:38) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"63CN", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = '63CN') [0m
+Completed in 0.00010 (10000 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=63CN]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:14:41) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"SFO", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'SFO') [0m
+Completed in 0.03200 (31 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=SFO]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:15:36) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.255436,-121.085815", "sw"=>" 37.376705,-122.913666", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.078000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -122.913666 AND longitude < -121.085815 AND latitude <= 38.255436 AND latitude >= 37.376705 AND airport_type = 'AIRPORT') [0m
+  [4;35;1mAirport Columns (0.000000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Completed in 0.11000 (9 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.07800 (70%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.255436,-121.085815&sw=%2037.376705,-122.913666]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:15:38) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"LVK", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'LVK') [0m
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=LVK]
+
+
+Processing ViewallairportsController#map (for 127.0.0.1 at 2009-11-12 01:19:08) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"map", "controller"=>"viewallairports"}
+Rendering viewallairports/map
+Completed in 0.00010 (10000 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/map]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:19:09) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.256515,-121.087189", "sw"=>" 37.377797,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;35;1mAirport Load (0.016000)[0m   [0mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.256515 AND latitude >= 37.377797 AND airport_type = 'AIRPORT') [0m
+  [4;36;1mAirport Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM `airports`[0m
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.03200 (41%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.256515,-121.087189&sw=%2037.377797,-122.915039]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:19:11) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"HWD", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'HWD') [0m
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=HWD]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:19:13) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"HWD", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'HWD') [0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=HWD]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:19:24) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"LVK", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'LVK') [0m
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=LVK]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:19:27) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"63CN", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = '63CN') [0m
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=63CN]
+
+
+Processing ViewallairportsController#map (for 127.0.0.1 at 2009-11-12 01:20:44) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"map", "controller"=>"viewallairports"}
+Rendering viewallairports/map
+Completed in 0.00010 (10000 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/map]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:20:44) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.256515,-121.087189", "sw"=>" 37.377797,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;35;1mAirport Load (0.016000)[0m   [0mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.256515 AND latitude >= 37.377797 AND airport_type = 'AIRPORT') [0m
+  [4;36;1mAirport Columns (0.015000)[0m   [0;1mSHOW FIELDS FROM `airports`[0m
+Completed in 0.06300 (15 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.03100 (49%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.256515,-121.087189&sw=%2037.377797,-122.915039]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:20:47) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"HWD", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'HWD') [0m
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=HWD]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:20:48) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"HWD", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.015000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'HWD') [0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01500 (48%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=HWD]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:20:55) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"LVK", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'LVK') [0m
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=LVK]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:20:59) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"SQL", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.015000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'SQL') [0m
+  [4;35;1mUserreview Columns (0.016000)[0m   [0mSHOW FIELDS FROM `userreviews`[0m
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.03100 (65%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=SQL]
+
+
+Processing ViewallairportsController#map (for 127.0.0.1 at 2009-11-12 01:23:10) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"map", "controller"=>"viewallairports"}
+Rendering viewallairports/map
+Completed in 0.00010 (10000 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/map]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:23:11) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.256515,-121.087189", "sw"=>" 37.377797,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.015000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.256515 AND latitude >= 37.377797 AND airport_type = 'AIRPORT') [0m
+  [4;35;1mAirport Columns (0.016000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Completed in 0.06200 (16 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.03100 (50%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.256515,-121.087189&sw=%2037.377797,-122.915039]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:23:13) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"HWD", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'HWD') [0m
+Completed in 0.00010 (10000 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=HWD]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:23:15) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"HWD", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'HWD') [0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=HWD]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:23:20) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"SQL", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'SQL') [0m
+  [4;35;1mUserreview Columns (0.016000)[0m   [0mSHOW FIELDS FROM `userreviews`[0m
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.01500 (31%) | DB: 0.01600 (34%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=SQL]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:23:23) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"SQL", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'SQL') [0m
+  [4;35;1mUserreview Columns (0.015000)[0m   [0mSHOW FIELDS FROM `userreviews`[0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01500 (48%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=SQL]
+
+
+Processing ViewallairportsController#map (for 127.0.0.1 at 2009-11-12 01:30:54) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"map", "controller"=>"viewallairports"}
+Rendering viewallairports/map
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.01500 (100%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/map]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:30:54) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.256515,-121.087189", "sw"=>" 37.377797,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.015000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.256515 AND latitude >= 37.377797 AND airport_type = 'AIRPORT') [0m
+  [4;35;1mAirport Columns (0.016000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Completed in 0.04600 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.03100 (67%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.256515,-121.087189&sw=%2037.377797,-122.915039]
+
+
+Processing ViewallairportsController#map (for 127.0.0.1 at 2009-11-12 01:32:05) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"map", "controller"=>"viewallairports"}
+Rendering viewallairports/map
+Completed in 0.00010 (10000 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/map]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:32:05) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.256515,-121.087189", "sw"=>" 37.377797,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.015000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.256515 AND latitude >= 37.377797 AND airport_type = 'AIRPORT') [0m
+  [4;35;1mAirport Columns (0.016000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Completed in 0.06200 (16 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.03100 (50%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.256515,-121.087189&sw=%2037.377797,-122.915039]
+
+
+Processing ViewallairportsController#map (for 127.0.0.1 at 2009-11-12 01:34:40) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"map", "controller"=>"viewallairports"}
+Rendering viewallairports/map
+Completed in 0.00010 (10000 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/map]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:34:41) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.066474,-121.087189", "sw"=>" 37.570705,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.000000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.066474 AND latitude >= 37.570705 AND airport_type = 'AIRPORT') [0m
+  [4;35;1mAirport Columns (0.015000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01500 (31%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.066474,-121.087189&sw=%2037.570705,-122.915039]
+
+
+Processing ViewallairportsController#map (for 127.0.0.1 at 2009-11-12 01:35:56) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"map", "controller"=>"viewallairports"}
+Rendering viewallairports/map
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/map]
+
+
+Processing ViewallairportsController#map (for 127.0.0.1 at 2009-11-12 01:35:56) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"map", "controller"=>"viewallairports"}
+Rendering viewallairports/map
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/map]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:35:57) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.256515,-121.087189", "sw"=>" 37.377797,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.000000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.256515 AND latitude >= 37.377797 AND airport_type = 'AIRPORT') [0m
+  [4;35;1mAirport Columns (0.016000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (34%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.256515,-121.087189&sw=%2037.377797,-122.915039]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:35:59) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"undefined", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'undefined') [0m
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=undefined]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:35:59) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"HWD", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'HWD') [0m
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=HWD]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:36:05) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"undefined", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'undefined') [0m
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=undefined]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:36:05) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"HWD", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.016000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'HWD') [0m
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (100%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=HWD]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:36:22) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.059986,-121.069336", "sw"=>" 37.17892,-122.897186", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.062000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -122.897186 AND longitude < -121.069336 AND latitude <= 38.059986 AND latitude >= 37.17892 AND airport_type = 'AIRPORT') [0m
+  [4;35;1mAirport Columns (0.016000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Completed in 0.09400 (10 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.07800 (82%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.059986,-121.069336&sw=%2037.17892,-122.897186]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:36:24) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"undefined", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'undefined') [0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=undefined]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:36:24) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"HAF", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'HAF') [0m
+  [4;36;1mUserreview Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM `userreviews`[0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=HAF]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:36:36) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"undefined", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'undefined') [0m
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=undefined]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:36:36) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"PAO", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'PAO') [0m
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=PAO]
+
+
+Processing ViewallairportsController#map (for 127.0.0.1 at 2009-11-12 01:38:12) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"map", "controller"=>"viewallairports"}
+Rendering viewallairports/map
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/map]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:38:12) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.256515,-121.087189", "sw"=>" 37.377797,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;35;1mAirport Load (0.000000)[0m   [0mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.256515 AND latitude >= 37.377797 AND airport_type = 'AIRPORT') [0m
+  [4;36;1mAirport Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM `airports`[0m
+Completed in 0.06200 (16 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.256515,-121.087189&sw=%2037.377797,-122.915039]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:38:15) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"HWD", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'HWD') [0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=HWD]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:38:23) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.030786,-121.109161", "sw"=>" 37.149371,-122.937012", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.078000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -122.937012 AND longitude < -121.109161 AND latitude <= 38.030786 AND latitude >= 37.149371 AND airport_type = 'AIRPORT') [0m
+  [4;35;1mAirport Columns (0.000000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Completed in 0.09400 (10 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.07800 (82%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.030786,-121.109161&sw=%2037.149371,-122.937012]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:38:25) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"HAF", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'HAF') [0m
+  [4;35;1mUserreview Columns (0.015000)[0m   [0mSHOW FIELDS FROM `userreviews`[0m
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01500 (31%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=HAF]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:38:34) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.122674,-121.269836", "sw"=>" 37.242355,-123.097687", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.063000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -123.097687 AND longitude < -121.269836 AND latitude <= 38.122674 AND latitude >= 37.242355 AND airport_type = 'AIRPORT') [0m
+  [4;35;1mAirport Columns (0.000000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Completed in 0.09400 (10 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.06300 (67%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.122674,-121.269836&sw=%2037.242355,-123.097687]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:38:35) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"OAK", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'OAK') [0m
+  [4;35;1mUserreview Columns (0.016000)[0m   [0mSHOW FIELDS FROM `userreviews`[0m
+Completed in 0.06200 (16 reqs/sec) | Rendering: 0.01500 (24%) | DB: 0.01600 (25%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=OAK]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:38:36) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.22092,-121.269836", "sw"=>" 37.341776,-123.097687", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.063000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -123.097687 AND longitude < -121.269836 AND latitude <= 38.22092 AND latitude >= 37.341776 AND airport_type = 'AIRPORT') [0m
+  [4;35;1mAirport Columns (0.015000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Completed in 0.10900 (9 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.07800 (71%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.22092,-121.269836&sw=%2037.341776,-123.097687]
+
+
+Processing ViewallairportsController#map (for 127.0.0.1 at 2009-11-12 01:41:13) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"map", "controller"=>"viewallairports"}
+Rendering viewallairports/map
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/map]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:41:14) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.256515,-121.087189", "sw"=>" 37.377797,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.000000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.256515 AND latitude >= 37.377797 AND airport_type = 'AIRPORT') [0m
+  [4;35;1mAirport Columns (0.000000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Completed in 0.06300 (15 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.256515,-121.087189&sw=%2037.377797,-122.915039]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:41:17) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"LVK", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'LVK') [0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=LVK]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:41:19) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"LVK", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'LVK') [0m
+Completed in 0.03200 (31 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=LVK]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:41:30) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"HAF", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.016000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'HAF') [0m
+  [4;35;1mUserreview Columns (0.016000)[0m   [0mSHOW FIELDS FROM `userreviews`[0m
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.03200 (68%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=HAF]
+
+
+Processing ViewallairportsController#map (for 127.0.0.1 at 2009-11-12 01:42:00) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"map", "controller"=>"viewallairports"}
+Rendering viewallairports/map
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.01600 (100%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/map]
+
+
+Processing ViewallairportsController#clustered_airports (for 127.0.0.1 at 2009-11-12 01:42:01) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"ne"=>"38.256515,-121.087189", "sw"=>" 37.377797,-122.915039", "action"=>"clustered_airports", "controller"=>"viewallairports"}
+  [4;36;1mAirport Load (0.015000)[0m   [0;1mSELECT * FROM `airports` WHERE (longitude > -122.915039 AND longitude < -121.087189 AND latitude <= 38.256515 AND latitude >= 37.377797 AND airport_type = 'AIRPORT') [0m
+  [4;35;1mAirport Columns (0.000000)[0m   [0mSHOW FIELDS FROM `airports`[0m
+Completed in 0.06200 (16 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01500 (24%) | 200 OK [http://localhost/viewallairports/clustered_airports?ne=38.256515,-121.087189&sw=%2037.377797,-122.915039]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:42:03) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"HWD", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.015000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'HWD') [0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01500 (48%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=HWD]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:42:07) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"LVK", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.016000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'LVK') [0m
+Completed in 0.03200 (31 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (50%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=LVK]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:42:11) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"HAF", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'HAF') [0m
+  [4;35;1mUserreview Columns (0.016000)[0m   [0mSHOW FIELDS FROM `userreviews`[0m
+Completed in 0.06300 (15 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (25%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=HAF]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:42:18) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"OAK", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'OAK') [0m
+  [4;35;1mUserreview Columns (0.015000)[0m   [0mSHOW FIELDS FROM `userreviews`[0m
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01500 (31%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=OAK]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:42:32) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"HAF", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'HAF') [0m
+  [4;35;1mUserreview Columns (0.000000)[0m   [0mSHOW FIELDS FROM `userreviews`[0m
+Completed in 0.03200 (31 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=HAF]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:42:38) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"SQL", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'SQL') [0m
+  [4;35;1mUserreview Columns (0.015000)[0m   [0mSHOW FIELDS FROM `userreviews`[0m
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01500 (31%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=SQL]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:42:46) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"LVK", "controller"=>"viewallairports"}
+  [4;36;1mUserreview Load (0.000000)[0m   [0;1mSELECT * FROM `userreviews` WHERE (airport_code = 'LVK') [0m
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=LVK]
+
+
+Processing ViewallairportsController#get_airport_review (for 127.0.0.1 at 2009-11-12 01:42:49) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--c94432304347369666159b78d38d4c0fadd6ce53
+  Parameters: {"action"=>"get_airport_review", "airportcode"=>"SQL", "controller"=>"viewallairports"}
+  [4;35;1mUserreview Load (0.000000)[0m   [0mSELECT * FROM `userreviews` WHERE (airport_code = 'SQL') [0m
+  [4;36;1mUserreview Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM `userreviews`[0m
+Completed in 0.03200 (31 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (50%) | 200 OK [http://localhost/viewallairports/get_airport_review?airportcode=SQL]
