@@ -117,7 +117,7 @@ function init() {
  	var reviews_html;
 
 	 //log for debugging
-	 GLog.writeUrl(url);
+	 //GLog.writeUrl(url);
 
 	 var request = GXmlHttp.create();
 	 request.open('GET', url, true);
@@ -255,6 +255,8 @@ function init() {
 
  	        }
  	    );
+
+
 
 
  	return marker;
