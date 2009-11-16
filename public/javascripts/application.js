@@ -271,7 +271,7 @@ function init() {
 function fetchAirportReviews(point){
 
 	//for user reviews
-	userreview_page = document.getElementById("sidebar");
+	userreview_page = document.getElementById("bottombar");
 
 
 	// create a new paragraph

@@ -11,13 +11,12 @@
    <-- <%=stylesheet_link_tag 'style'%> -->
 
 </head>
-<body id="body" class="sidebar-off">
+<body id="body" class="bottombar-off">
   	
   	
 <!-- <div id="map"></div> -->
   
-  
- 	<div id="map-wrapper">
+   	<div id="map-wrapper">
   		<div id="map"></div>
   	</div> 
   
@@ -26,17 +25,33 @@
 	  		<%= image_tag "vayuu_on_transp_white.png"%>
 	  		
 	  		<div id="text-toolbar">
+	  		
+	  		<!--
 	  		<%= link_to_function 'Hide Reviews',"Element.addClassName('body','sidebar-off')", {:id=>'button-sidebar-hide'}%>
 	  		<%= link_to_function 'Show Reviews',"Element.removeClassName('body','sidebar-off')", {:id=>'button-sidebar-show'}%>
+	  		-->
+	  		
+	  		<%= link_to_function 'Hide Reviews',"Element.addClassName('body','bottombar-off')", {:id=>'button-sidebar-hide'}%>
+	  		<%= link_to_function 'Show Reviews',"Element.removeClassName('body','bottombar-off')", {:id=>'button-sidebar-show'}%>
+	  		
+	  		
 	  		</div>
 	  		
 	  		
   	</div>
   	
+	<!--
 	<div id="sidebar">
 	   		<p>Airport Reviews go in here...blah ..blah..blah ... </p>
   	</div>
+  	-->
   	
+  	
+  	<div id="bottombar">
+		   	<h3>Airport Reviews</h3>
+  	</div>
+  	
+ 
  
      		
 </body>
